@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/fontawesome/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>PetShop</title>
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning">
+		<a class="navbar-brand" href="#">Pocetna</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown bg-warning">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Ponuda
+					</a>
+					<div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#kucici">Psi</a>
+						<a class="dropdown-item" href="#macici">Macke</a>
+						<a class="dropdown-item" href="#papagaji">Papagaji</a>
+					</div>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#kontakt">Kontakt<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#"><button data-toggle="modal" data-target="#korpaModal" id="korpa_modal"><i class="fa fa-shopping-basket" aria-hidden="true"></i></button><span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section id="korpa">
+		<div class="modal fade" id="korpaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalScrollableTitle">Vasa korpa</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" id="korpa_content"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal" id="isprazni_korpu">Isprazni korpu</button>
+						<button type="button" class="btn btn-primary" id="kupi">Kupi!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="hero_section">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/safari1.jpg" class="d-block w-100">
+				</div>
+				<div class="carousel-item">
+					<img src="img/safari2.jpg" class="d-block w-100">
+				</div>
+				<div class="carousel-item">
+					<img src="img/safari3.jpg" class="d-block w-100">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only"></span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only"></span>
+			</a>
+		</div>
+	</section>
+	<section class="content_section">
+		<div class="vrsta_zivotinje" id="psi">
+			<div class="red">
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+			</div>
+			<div class="red">
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="vrsta_zivotinje" id="macici">
+			<div class="red"><h1>MACKE</h1></div>
+			<div class="red">
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+			</div>
+			<div class="red">
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="vrsta_zivotinje" id="papagaji">
+			<div class="red"><h1>PAPAGAJI</h1></div>
+			<div class="red">
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+			</div>
+			<div class="red">
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+				<div class="kuce">
+					<div class="front">
+						<img src="img/slika.jpg">
+					</div>
+					<div class="back">
+						<h2>ime zivotinje</h2>
+						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra tincidunt. Nulla ullamcorper eget magna sed pharetra. Nulla dolor dolor, sagittis nec vehicula ut, gravida non erat. Fusce augue quam, cursus non ipsum vitae, mollis cursus massa. </div> 
+						<h3>$400</h3>
+						<button class="dodaj">Dodaj u korpu</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="kontakt">
+		<div class="levo">
+			<h1>Vlasnik: Random Randomic</h1>
+			<h2>Telefon: 061234567</h2>
+			<h2>E-mail: mejlrr@gmail.com</h2>
+			<h2>Adresa: addrs</h2>
+		</div>
+		<div class="desno">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1574.9395337809278!2d20.487048018350386!3d44.048845114026314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47576a13acdbf611%3A0x3da41169317b96e8!2sSun%20travel%20d.o.o.!5e0!3m2!1sen!2srs!4v1684447956746!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
+<script defer>
+const dugmad = document.querySelectorAll(".dodaj");
+const isprazni_korpu = document.getElementById("isprazni_korpu");
+const korpa = document.getElementById("korpa_content");
+const kupi = document.getElementById("kupi");
+
+
+function dodaj_u_korpu(){
+	const novi = document.createElement('div');
+	const ime = document.createElement('h3');
+	const opis = document.createElement('div');
+	const cena = document.createElement('h3');
+	let kontainer = this.parentNode;
+	let ime_text = kontainer.querySelector('h2').textContent;
+	let opis_text = kontainer.querySelector('div').textContent;
+	let cena_text = kontainer.querySelector('h3').textContent;
+	ime.textContent=ime_text;
+	opis.textContent = opis_text;
+	cena.textContent = cena_text;
+
+	novi.classList.add("obj_korpa");
+
+	novi.appendChild(ime);
+	novi.appendChild(opis);
+	novi.appendChild(cena);
+
+	korpa.appendChild(novi);
+}
+
+
+isprazni_korpu.addEventListener('click', function(){
+	korpa.innerHTML='';
+});
+kupi.addEventListener('click', function(){
+	if(korpa.innerHTML!=''){
+		alert("kupljeno!");
+		korpa.innerHTML='';
+	} else{
+		alert('prazna korpa');
+	}
+});
+
+dugmad.forEach(function(btn){
+	btn.addEventListener('click', dodaj_u_korpu);
+});
+</script>
+</body>
+</html>

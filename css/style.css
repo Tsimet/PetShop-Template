@@ -1,0 +1,127 @@
+body, html {
+  scroll-behavior: smooth; }
+  body .hero_section, html .hero_section {
+    max-height: 100vh;
+    top: 0;
+    overflow: hidden; }
+  body .content_section .vrsta_zivotinje, html .content_section .vrsta_zivotinje {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange; }
+    body .content_section .vrsta_zivotinje .red, html .content_section .vrsta_zivotinje .red {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin: 3vh 0 7vh 0; }
+      body .content_section .vrsta_zivotinje .red h1, html .content_section .vrsta_zivotinje .red h1 {
+        margin-bottom: 8vh;
+        margin-top: 0;
+        height: 100%; }
+      body .content_section .vrsta_zivotinje .red .kuce, html .content_section .vrsta_zivotinje .red .kuce {
+        width: 21vw;
+        height: 27vh;
+        margin: 0 1vw 0 1vw;
+        transition: 0.3s;
+        overflow: hidden;
+        perspective: 10000px;}
+        body .content_section .vrsta_zivotinje .red .kuce .front,
+        body .content_section .vrsta_zivotinje .red .kuce .back, html .content_section .vrsta_zivotinje .red .kuce .front,
+        html .content_section .vrsta_zivotinje .red .kuce .back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          transition: transform 0.3s; }
+        body .content_section .vrsta_zivotinje .red .kuce .front, html .content_section .vrsta_zivotinje .red .kuce .front {
+          color: #333; }
+          body .content_section .vrsta_zivotinje .red .kuce .front img, html .content_section .vrsta_zivotinje .red .kuce .front img {
+            width: 100%;
+            height: 100%; }
+        body .content_section .vrsta_zivotinje .red .kuce .back, html .content_section .vrsta_zivotinje .red .kuce .back {
+          background-color: #333;
+          color: #f1f1f1;
+          transform: rotateY(180deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column; }
+          body .content_section .vrsta_zivotinje .red .kuce .back div, html .content_section .vrsta_zivotinje .red .kuce .back div {
+            text-align: center; }
+          body .content_section .vrsta_zivotinje .red .kuce .back button, html .content_section .vrsta_zivotinje .red .kuce .back button {
+            border: none;
+            outline: none;
+            color: black;
+            background-color: gold;
+            transition: 0.2s;
+            padding: 5px; }
+            body .content_section .vrsta_zivotinje .red .kuce .back button:active, html .content_section .vrsta_zivotinje .red .kuce .back button:active {
+              background-color: darkorange; }
+        body .content_section .vrsta_zivotinje .red .kuce:hover .front, html .content_section .vrsta_zivotinje .red .kuce:hover .front {
+          transform: rotateY(180deg); }
+        body .content_section .vrsta_zivotinje .red .kuce:hover .back, html .content_section .vrsta_zivotinje .red .kuce:hover .back {
+          transform: rotateY(0deg); }
+  body #kontakt, html #kontakt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #333;
+    color: white; }
+    body #kontakt .levo,
+    body #kontakt .desno, html #kontakt .levo,
+    html #kontakt .desno {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px; }
+    body #kontakt .levo, html #kontakt .levo {
+      border-right: 3px solid gold; }
+    body #kontakt #korpa .korpa-body, html #kontakt #korpa .korpa-body {
+      height: 100%;
+      text-align: center;
+      background-color: green; }
+
+.obj_korpa {
+  background-color: rgba(51, 51, 51, 0.2);
+  border: 1px solid gold;
+  padding: 25px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.obrisi_jedan {
+  border: none;
+  outline: none;
+  border-radius: 50%; }
+
+#korpa_modal {
+  border: none;
+  outline: none;
+  width: 50px;
+  padding: 3px; }
+  #korpa_modal:focus {
+    outline: none; }
+  #korpa_modal i {
+    font-size: 1.4em; }
+
+@media (max-width: 700px) {
+  body .content_section .vrsta_zivotinje .red {
+    flex-direction: column; }
+    body .content_section .vrsta_zivotinje .red .kuce {
+      width: 50vw;
+      height: 34vh;
+      margin: 5vh; }
+  body #kontakt {
+    flex-direction: column; }
+    body #kontakt .levo {
+      border: none; } }
+
+/*# sourceMappingURL=style.css.map */
